@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         val buttonSearch = findViewById<Button>(R.id.search_button)
         val buttonSearchClick: View.OnClickListener = object : View.OnClickListener {
             override fun onClick(v: View?) {
-                val searchIntent = Intent(this@MainActivity, SearchActivity::class.java)
-                startActivity(searchIntent)
+                Toast.makeText(this@MainActivity, "Нажали на кнопку < Поиск >", Toast.LENGTH_SHORT).show()
+
             }
         }
         buttonSearch.setOnClickListener(buttonSearchClick)
