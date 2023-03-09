@@ -23,14 +23,13 @@ class MainActivity : AppCompatActivity() {
 
         val buttonMedia = findViewById<Button>(R.id.media_button)
         buttonMedia.setOnClickListener {
-            val mediaIntent = Intent(this, MediaActivity::class.java)
-            startActivity(mediaIntent)
+            Toast.makeText(this@MainActivity, "Нажали на кнопку < Медиатека >", Toast.LENGTH_SHORT).show()
+
         }
 
         val buttonSetting = findViewById<Button>(R.id.setting_button)
         buttonSetting.setOnClickListener {
-            val settingIntent = Intent(this, SettingActivity::class.java)
-            startActivity(settingIntent)
+            Toast.makeText(this@MainActivity, "Нажали на кнопку < Настройки >", Toast.LENGTH_SHORT).show()
         }
     }
 
